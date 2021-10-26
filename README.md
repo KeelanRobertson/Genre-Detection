@@ -22,3 +22,19 @@ audioread: `pip install audioread`
 
 Data used can be found here: https://github.com/mdeff/fma
 
+### Results
+
+Using the data we attempted to fit 4 model types which resulted in the following accuracy scores:
+
+**Logistic Regression** - 46% Accuracy  
+**KNN** - 44% Accuracy  
+**Random Forests** - 56% Accuracy  
+**Neural network** - 51% Accuracy  
+
+Following this we tried to model the main metrics that spotify uses to classify songs on their platform:  
+Energy, Acousticness, Speechiness, Instrumentalness, Danceability
+
+Using XGBoost we created models for each of these metrics. 
+Our Train and Test scores are shown in the following table.
+
+![image](https://user-images.githubusercontent.com/87439600/138870503-0fc80279-7f5e-441d-845e-dd531dc58a60.png)
